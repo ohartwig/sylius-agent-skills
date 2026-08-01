@@ -1,3 +1,17 @@
+## [1.1.2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.1...v1.1.2) (2026-08-01)
+
+### :bug: Fixes
+
+* **phpstan:** resolve both level-8 findings without suppressions ([b29fc75](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/b29fc75db3719d9cb5535ccdfaccae5318c8c03d))
+
+### :zap: Refactor
+
+* **phpstan:** use the shared level-8 standard ([458e3a4](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/458e3a48926e74ea84f71092f101b34ac9c7ec5d))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.32.2 ([5a45599](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/5a45599d7718855e90a2e95cef2356bcd681993a))
+
 ## [1.1.1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.0...v1.1.1) (2026-08-01)
 
 ### :repeat: Chores
