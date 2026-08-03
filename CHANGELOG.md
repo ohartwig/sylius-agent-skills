@@ -1,3 +1,22 @@
+## [1.1.3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.2...v1.1.3) (2026-08-03)
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.32.4 ([0363491](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/0363491f07a62cd31b4fbf8a475611fd950f070f))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.32.5 ([2089ea3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/2089ea31f2f9a5af696ac44571cd351cefe3ddf8))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.32.6 ([ffd05bd](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/ffd05bd8c9efa9961744ccee4928870ff1388e4b))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.32.7 ([e101703](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e10170345256529084c6e85120a77a34db3273a1))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.33.0 ([ec5b5cd](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/ec5b5cdd481c916ef765ddb6fe490e3fb24029a1))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.34.0 ([75bdde5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/75bdde534deae6db354b4d9c7eab8941482cf8ef))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.34.1 ([c19ea28](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/c19ea28b3c7f1ebaf22d3e25c24025f7ee9bbe3f))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.34.2 ([60394f4](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/60394f473d0f48cf899b3685205daa0529d9bba4))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.35.0 ([db3e969](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/db3e96904b2de81c13f5f847b02d93d9c21e781f))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.35.1 ([bbab753](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/bbab753e91a04f6c64ff9b908f8bb39e5190f71c))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.35.2 ([d3e330c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/d3e330c3aa47d6f967eb39ba23f6d7db508306d0))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.2 ([f077d39](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/f077d395efb635c9851fd23bfe7bfafff523ce87))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.4 ([fbd7fc4](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/fbd7fc4e27a987364d1ba3df8fbdfa67d1dee4c8))
+* **security:** Templates auf devops/repo-templates abgleichen ([9f4bff2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/9f4bff244b82c0d98f853673cf7d5ac3ee01c812))
+
 ## [1.1.2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.1...v1.1.2) (2026-08-01)
 
 ### :bug: Fixes
