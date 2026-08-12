@@ -1,3 +1,13 @@
+## [1.1.5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.4...v1.1.5) (2026-08-12)
+
+### :bug: Fixes
+
+* **deps:** update dependency php to ^8.5.9 ([fd726e3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/fd726e316d1267e616ada41f7d82a4dbca8935e5))
+
+### :repeat: Chores
+
+* **deps:** update phpstan packages ([2505bc1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/2505bc1c5cdbdb0f1740c2f9ccf5d9aeed1f04bf))
+
 ## [1.1.4](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.3...v1.1.4) (2026-08-12)
 
 ### :bug: Fixes
