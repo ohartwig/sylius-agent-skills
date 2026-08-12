@@ -1,3 +1,22 @@
+## [1.1.4](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.3...v1.1.4) (2026-08-12)
+
+### :bug: Fixes
+
+* **deps:** update dependency sylius/sylius to ^2.0.18 [security] ([e022fa6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e022fa6c5dac620d0d3ecc5226bee3eb842a394d))
+
+### :repeat: Continuous Integrations
+
+* follow the composed pipeline on [@1](https://git.ole-hartwig.eu/1) instead of an exact pin ([e74e7f6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e74e7f6634340cec3f8e82e9351bc8d07b4a9981))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.10 ([6358c14](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/6358c1450b23b948d3b4bfc54cc030d8a3048e6f))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.5 ([c5ab493](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/c5ab4935301aae013801a229dc5ddccd934772a3))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.6 ([c3f0587](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/c3f05874365f49847788e8d909ae7bb4f4de9bc1))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.8 ([d1f5d4e](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/d1f5d4e2e85920630c404782126054eff2854686))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.9 ([4637f15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/4637f15f782e736e5988ea00a866daa1f5636be6))
+* **deps:** update dependency phpunit/phpunit to ^11.5.50 [security] ([d320429](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/d320429b240b5cabb111594e25fdcd66b62f108d))
+
 ## [1.1.3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.2...v1.1.3) (2026-08-03)
 
 ### :repeat: Chores
