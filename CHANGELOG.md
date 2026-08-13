@@ -1,3 +1,13 @@
+## [1.1.6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.5...v1.1.6) (2026-08-13)
+
+### :bug: Fixes
+
+* **deps:** update dependency sylius/sylius to ^2.2.8 ([e281a09](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e281a092e35444bda746565dafee2e3e74099a6b))
+
+### :repeat: Chores
+
+* **deps:** update dependency phpunit/phpunit to ^11.5.56 ([54686b8](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/54686b8ac4ec6886906942bf685b03e4d3204b29))
+
 ## [1.1.5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.4...v1.1.5) (2026-08-12)
 
 ### :bug: Fixes
