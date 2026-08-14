@@ -1,3 +1,9 @@
+## [1.1.7](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.6...v1.1.7) (2026-08-14)
+
+### :bug: Fixes
+
+* allow the infection extension installer plugin ([6aeef00](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/6aeef0057836147340ae8b7472a9a05c4f81ebaa))
+
 ## [1.1.6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.5...v1.1.6) (2026-08-13)
 
 ### :bug: Fixes
