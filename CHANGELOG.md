@@ -1,3 +1,9 @@
+## [1.1.15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.14...v1.1.15) (2026-09-02)
+
+### :repeat: Chores
+
+* **repo-templates:** sync ([6efa552](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/6efa5524546fe90da930b5e46bc02c6612e5bee8))
+
 ## [1.1.14](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.13...v1.1.14) (2026-09-02)
 
 ### :bug: Fixes
