@@ -1,3 +1,9 @@
+## [1.1.16](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.15...v1.1.16) (2026-09-03)
+
+### :bug: Fixes
+
+* **deps:** update dependency sylius/sylius to ^2.2.9 ([e53a1ef](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e53a1ef029c256c0374d8090f14b400f22b629c0))
+
 ## [1.1.15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.14...v1.1.15) (2026-09-02)
 
 ### :repeat: Chores
