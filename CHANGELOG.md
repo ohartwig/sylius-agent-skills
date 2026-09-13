@@ -1,3 +1,14 @@
+## [1.1.18](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.17...v1.1.18) (2026-09-13)
+
+### :repeat: Continuous Integrations
+
+* release with yasrt ([36d52b5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/36d52b525f14533e8f9d45ad16c2d25074470e06))
+
+### :repeat: Chores
+
+* **deps:** update dependency phpstan/phpstan to ^2.2.14 ([e928d70](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e928d70cfe2f4d100821a8a7b82b8b7aa3dcbab8))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2 ([551dcdf](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/551dcdffb4f9c61ca40212ffad4edc9fa81f2ff0))
+
 ## [1.1.17](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.16...v1.1.17) (2026-09-04)
 
 ### :repeat: Chores
