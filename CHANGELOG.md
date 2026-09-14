@@ -1,3 +1,9 @@
+## [1.1.19](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.18...v1.1.19) (2026-09-14)
+
+### :bug: Fixes
+
+* **docs:** Markdown-Hygiene fuer lint:markdown ([b737e6b](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/b737e6b823f8619b662d5cb4bdcdd3de0b30e834))
+
 ## [1.1.18](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.17...v1.1.18) (2026-09-13)
 
 ### :repeat: Continuous Integrations
