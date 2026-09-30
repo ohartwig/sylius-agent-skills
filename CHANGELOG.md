@@ -1,3 +1,14 @@
+## [1.1.26](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.25...v1.1.26) (2026-09-30)
+
+### :bug: Fixes
+
+* **deps:** update dependency sylius/sylius to ^2.3.0 ([012da37](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/012da37d03dcdf2e7945f1509d9b83d3727c4f2b))
+
+### :repeat: Continuous Integrations
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.16 ([1f79cd9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/1f79cd972f7f277405989f5db12ae9f597493e5a))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.12 ([62b194c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/62b194c806f1fdd7ef3c3ba3c37f00f142b7d22f))
+
 ## [1.1.25](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.24...v1.1.25) (2026-09-29)
 
 ### :repeat: Continuous Integrations
