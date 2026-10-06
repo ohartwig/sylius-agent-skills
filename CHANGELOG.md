@@ -1,3 +1,9 @@
+## [1.1.30](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.29...v1.1.30) (2026-10-06)
+
+### :repeat: Chores
+
+* **deps:** update dependency phpunit/phpunit to ^11.5.57 ([952ae7c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/952ae7c1bcf6f2a3387cb628ac0c2435bee65299))
+
 ## [1.1.29](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.28...v1.1.29) (2026-10-05)
 
 ### :repeat: Chores
