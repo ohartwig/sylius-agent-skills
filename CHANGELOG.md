@@ -1,3 +1,10 @@
+## [1.1.33](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.32...v1.1.33) (2026-10-13)
+
+### :repeat: Chores
+
+* **reuse:** annotate the tooling files the mirror strips ([8c541d7](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/8c541d7548b380a3efdca87ce0e9dbf496801c2a))
+* publish to GitHub and Packagist ([653ee7e](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/653ee7ecba3002fee2a9657cc33f1b7ce776072b))
+
 ## [1.1.32](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.31...v1.1.32) (2026-10-09)
 
 ### :repeat: Chores
