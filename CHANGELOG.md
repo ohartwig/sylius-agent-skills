@@ -1,3 +1,9 @@
+## [1.1.38](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.37...v1.1.38) (2026-10-28)
+
+### :repeat: Chores
+
+* **deps:** update dependency phpstan/phpstan to ^2.3.3 ([e4f0d1c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e4f0d1c5e5bfa3c8932956c200fd21b1da983bde))
+
 ## [1.1.37](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.36...v1.1.37) (2026-10-25)
 
 ### :repeat: Chores
