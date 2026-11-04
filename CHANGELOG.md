@@ -1,3 +1,14 @@
+## [1.1.40](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.39...v1.1.40) (2026-11-04)
+
+### :bug: Fixes
+
+* **security:** AUD-053 F01 — replace customer identifiers with placeholders ([4c1cf34](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/4c1cf34e8d52cc822944642cf7791bf0600afbe1))
+
+### :white_check_mark: Tests
+
+* **security:** AUD-053 F01 — fix the hygiene test namespace (PSR-4) ([2ab32df](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/2ab32dfae3ceb7dbb23c1dd13a671c833415ac34))
+* **security:** AUD-053 F01 — add the customer-name hygiene test ([e6c10d1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/e6c10d185eebf7db90c78ca5669024ee4bfc5fb7))
+
 ## [1.1.39](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.38...v1.1.39) (2026-10-30)
 
 ### :repeat: Chores
