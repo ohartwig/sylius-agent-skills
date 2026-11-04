@@ -5,7 +5,7 @@
 
 declare(strict_types=1);
 
-namespace KohSyliusAgentSkillsTests\Hygiene;
+namespace Koh\SyliusAgentSkills\Tests\Hygiene;
 
 use PHPUnit\Framework\Attributes\CoversNothing;
 use PHPUnit\Framework\TestCase;
