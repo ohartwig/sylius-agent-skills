@@ -5,6 +5,7 @@
 
 declare(strict_types=1);
 
+use Koh\SyliusAgentSkills\Catalogue\PublishedSkills;
 use Koh\SyliusAgentSkills\Controller\AgentSkillsController;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
@@ -13,10 +14,10 @@ return static function (RoutingConfigurator $routes): void {
         ->controller([AgentSkillsController::class, 'index'])
         ->methods(['GET', 'HEAD']);
 
-    // Skill names are lowercase alphanumeric plus hyphens per the RFC; the
-    // requirement keeps the route from swallowing index.json.
+    // The same name rule the index applies, so every entry it lists resolves
+    // here; it also keeps the route from swallowing index.json.
     $routes->add('koh_agent_skills_document', '/.well-known/agent-skills/{name}/SKILL.md')
         ->controller([AgentSkillsController::class, 'document'])
-        ->requirements(['name' => '[a-z0-9][a-z0-9-]*'])
+        ->requirements(['name' => PublishedSkills::NAME_PATTERN])
         ->methods(['GET', 'HEAD']);
 };

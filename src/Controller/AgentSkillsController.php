@@ -10,7 +10,7 @@ namespace Koh\SyliusAgentSkills\Controller;
 use Koh\SyliusAgentContracts\Context\AgentContextFactoryInterface;
 use Koh\SyliusAgentContracts\Http\AgentJsonResponder;
 use Koh\SyliusAgentContracts\Model\AgentSkill;
-use Koh\SyliusAgentContracts\Registry\AgentSkillRegistry;
+use Koh\SyliusAgentSkills\Catalogue\PublishedSkills;
 use Koh\SyliusAgentSkills\Renderer\SkillDocumentRenderer;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,7 +24,7 @@ final class AgentSkillsController
     public const SCHEMA = 'https://schemas.agentskills.io/discovery/0.2.0/schema.json';
 
     public function __construct(
-        private readonly AgentSkillRegistry $skills,
+        private readonly PublishedSkills $skills,
         private readonly SkillDocumentRenderer $renderer,
         private readonly AgentContextFactoryInterface $contextFactory,
         private readonly AgentJsonResponder $responder,
@@ -42,18 +42,26 @@ final class AgentSkillsController
 
         $entries = [];
         foreach ($skills as $skill) {
-            // Digest over the document this shop will actually serve — computed
-            // now, not configured. A digest kept in configuration goes stale the
-            // moment a description changes, and a client that verifies it then
-            // rejects a perfectly good skill.
-            $document = $this->renderer->render($skill, $context);
+            if (PublishedSkills::isServedLocally($skill)) {
+                // Digest over the document this shop will actually serve —
+                // computed now, not configured. A digest kept in configuration
+                // goes stale the moment a description changes, and a client
+                // that verifies it then rejects a perfectly good skill.
+                $url = $context->url('/.well-known/agent-skills/'.$skill->id.'/SKILL.md');
+                $digest = $this->renderer->digest($this->renderer->render($skill, $context));
+            } else {
+                // Hosted elsewhere: PublishedSkills only admits such a skill
+                // with both its URL and its digest.
+                $url = (string) $skill->url;
+                $digest = (string) $skill->digest;
+            }
 
             $entries[] = [
                 'name' => $skill->id,
                 'type' => $skill->type,
                 'description' => $skill->description,
-                'url' => $skill->url ?? $context->url('/.well-known/agent-skills/'.$skill->id.'/SKILL.md'),
-                'digest' => $skill->digest ?? $this->renderer->digest($document),
+                'url' => $url,
+                'digest' => $digest,
             ];
         }
 
@@ -66,18 +74,17 @@ final class AgentSkillsController
     public function document(string $name, Request $request): Response
     {
         $context = $this->contextFactory->create();
+        $skill = $this->skills->find($name, $context);
 
-        foreach ($this->skills->all($context) as $skill) {
-            if ($skill->id === $name) {
-                return $this->responder->respondWithBody(
-                    $this->renderer->render($skill, $context),
-                    'text/markdown',
-                    request: $request,
-                );
-            }
+        if (null === $skill) {
+            throw new NotFoundHttpException(\sprintf('No skill named "%s".', $name));
         }
 
-        throw new NotFoundHttpException(\sprintf('No skill named "%s".', $name));
+        return $this->responder->respondWithBody(
+            $this->renderer->render($skill, $context),
+            'text/markdown',
+            request: $request,
+        );
     }
 
     /** @return list<AgentSkill> */

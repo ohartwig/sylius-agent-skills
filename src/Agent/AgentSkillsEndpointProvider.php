@@ -10,15 +10,15 @@ namespace Koh\SyliusAgentSkills\Agent;
 use Koh\SyliusAgentContracts\Context\AgentContext;
 use Koh\SyliusAgentContracts\Model\AgentEndpoint;
 use Koh\SyliusAgentContracts\Provider\AgentEndpointProviderInterface;
-use Koh\SyliusAgentContracts\Registry\AgentSkillRegistry;
+use Koh\SyliusAgentSkills\Catalogue\PublishedSkills;
 
 /**
- * Announces the index — but only while there is a skill in it, since the route
- * 404s on an empty registry.
+ * Announces the index — but only while there is a publishable skill in it,
+ * since the route 404s otherwise.
  */
 final class AgentSkillsEndpointProvider implements AgentEndpointProviderInterface
 {
-    public function __construct(private readonly AgentSkillRegistry $skills)
+    public function __construct(private readonly PublishedSkills $skills)
     {
     }
 
