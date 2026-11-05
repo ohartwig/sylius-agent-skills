@@ -5,9 +5,10 @@ SPDX-License-Identifier: MIT
 
 # koh/sylius-agent-skills
 
-Publishes the [Agent Skills](https://github.com/cloudflare/agent-skills-discovery-rfc)
-discovery index at `/.well-known/agent-skills/index.json`, and the `SKILL.md`
-documents it names.
+Publishes the [Agent Skills discovery](https://github.com/cloudflare/agent-skills-discovery-rfc)
+index (RFC v0.2.0, `$schema`
+`https://schemas.agentskills.io/discovery/0.2.0/schema.json`) at
+`/.well-known/agent-skills/index.json`, and the `SKILL.md` documents it names.
 
 ## Install
 
@@ -38,8 +39,39 @@ A digest kept in configuration goes stale the moment a description changes, and
 a client that verifies it then rejects a perfectly good skill — while the shop
 looks fine to everyone not checking.
 
-A provider that hosts its artifact elsewhere may set `url` and `digest` on the
-`AgentSkill` itself; those are used verbatim.
+A provider that hosts its artifact elsewhere sets `url` **and** `digest` on the
+`AgentSkill` itself; both are used verbatim. This is also the only way to
+publish a `type: 'archive'` skill — this package renders `SKILL.md` files, not
+archives. A `url` without a `digest` is not accepted: the digest this package
+could compute would be over its own rendering, not over the bytes at that URL.
+
+## The rendered SKILL.md
+
+```markdown
+---
+name: product-search
+description: "Search the catalogue by keyword."
+---
+
+# Product Search
+
+Search the catalogue by keyword.
+
+**Tags:** commerce
+
+## Interface
+
+- **Input:** text/plain
+- **Output:** application/json
+```
+
+The frontmatter is what the Agent Skills format requires; `name` is the skill
+id and equals the directory the document is served from. The description is
+always emitted as a quoted string, so a colon or a `#` in it stays text.
+
+An `## Access` section pointing at `/auth.md` is added only while an auth method
+is registered (`AuthMethodDescriptorInterface`), so the document never links to
+a page that does not exist.
 
 ## Registering skills
 
@@ -63,8 +95,26 @@ final class ProductSearchSkillProvider implements AgentSkillProviderInterface
 The same skill also appears in the A2A agent card and the MCP server card, if
 those bundles are installed. Described once, projected three ways.
 
-With nothing registered the index returns **404** — an index listing no skills
-claims the shop offers none, which is not the same as none being registered.
+### What the index admits
+
+The skill registry is shared with the A2A card and the MCP server card. The
+discovery RFC is stricter than either, so a skill is listed only if
+
+- its id is a valid Agent Skills name: 1–64 characters of `a-z`, `0-9` and
+  `-`, with no leading, trailing or consecutive hyphen;
+- its description is not empty and at most 1024 characters;
+- its type is `skill-md` or `archive`;
+- a `digest` it sets has the form `sha256:` + 64 lowercase hex digits;
+- an `archive`, or a `skill-md` with its own `url`, brings both `url` and
+  `digest`.
+
+A skill that fails a rule is left out of the index — and its `SKILL.md` route
+404s — with a warning in the log naming the skill and the rule. It still
+appears in the A2A and MCP cards.
+
+With nothing publishable the index returns **404** and is not announced in
+`llms.txt` or the API catalogue — an index listing no skills claims the shop
+offers none, which is not the same as none being registered.
 
 ## Decommission
 
