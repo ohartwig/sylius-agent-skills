@@ -1,3 +1,9 @@
+## [1.1.44](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.43...v1.1.44) (2026-11-17)
+
+### :bug: Fixes
+
+* **composer:** point homepage at the package page ([c2a9dea](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/commit/c2a9dea5961f42633745bac872c80b79f630b207))
+
 ## [1.1.43](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-skills/compare/v1.1.42...v1.1.43) (2026-11-17)
 
 ### :repeat: Chores
